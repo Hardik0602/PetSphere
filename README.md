@@ -1,2 +1,1 @@
-# PetSphere
-pet shop
+PetSphere
