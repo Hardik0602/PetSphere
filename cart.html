@@ -3,6 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/nav_logo.webp" as="image">
+    <link rel="preload" href="assets/hero_image.webp" as="image">
+    <link rel="preload" href="assets/dog_food.webp" as="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="assets/nav_logo2.webp" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <!-- <li><a href="#vet">Vet</a></li> -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" class="active">Cart <i class="fas fa-shopping-cart"></i></a></li>
+=======
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cara - Pet E-commerce</title>
@@ -22,10 +44,116 @@
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li id="lg-bag"><a class="active" href="cart.html"><i class='bx bx-shopping-bag'></i></a></li>
+>>>>>>> 07eefe5766118c83a1a981ca04a4f42ad0d45cc8
             </ul>
         </nav>
     </header>
 
+<<<<<<< HEAD
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Cart</h1>
+            <p>Your Cart!</p>
+        </div>
+    </section>
+
+
+    <section class="cart-table-section">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="cart-row">
+                    <td><img src="assets/dog_food.webp" alt="Dog Food" class="cart-img" /></td>
+                    <td>Dog Food</td>
+                    <td class="unit-price">₹2499</td>
+                    <td>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+                            <input type="text" value="1" class="qty-input" readonly />
+                            <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">₹2499</td>
+                </tr>
+                <tr class="cart-row">
+                    <td><img src="assets/dog_food.webp" alt="Dog Food" class="cart-img" /></td>
+                    <td>Dog Food</td>
+                    <td class="unit-price">₹2499</td>
+                    <td>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+                            <input type="text" value="1" class="qty-input" readonly />
+                            <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">₹2499</td>
+                </tr>
+                <tr class="cart-row">
+                    <td><img src="assets/dog_food.webp" alt="Dog Food" class="cart-img" /></td>
+                    <td>Dog Food</td>
+                    <td class="unit-price">₹2499</td>
+                    <td>
+                        <div class="quantity-selector">
+                            <button class="qty-btn" onclick="updateQty(this, -1)">-</button>
+                            <input type="text" value="1" class="qty-input" readonly />
+                            <button class="qty-btn" onclick="updateQty(this, 1)">+</button>
+                        </div>
+                    </td>
+                    <td class="subtotal">₹2499</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+
+
+    <footer>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><b>Address:</b> Manav Rachna University</p>
+            <p><b>Phone:</b> +91 5555555555</p>
+            <p><b>Hours:</b> 10:00 AM - 08:00 PM, Mon - Sat</p>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Delivery Information</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>My Account</h4>
+            <p><a href="#">Sign In</a></p>
+            <p><a href="#">View Cart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track My Order</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Install App</h4>
+            <p><b>From App Store or Google Play</b></p>
+            <div class="app-images">
+                <img src="assets/app.webp" alt="App Store" />
+                <img src="assets/play.webp" alt="Google Play" />
+            </div>
+            <p><b>Secured Payment Gateways</b></p>
+            <img src="assets/pay.webp" alt="Payment Gateways" class="payment-gateway-image" />
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
+=======
     <section id="page-header" class="about-header">
         <h2>Your Cart</h2>
         <p>Review your selected items below</p>
@@ -177,3 +305,4 @@
 </body>
 
 </html
+>>>>>>> 07eefe5766118c83a1a981ca04a4f42ad0d45cc8
