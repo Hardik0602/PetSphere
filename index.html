@@ -1,442 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSphere</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="assets/nav_logo.webp" as="image">
+    <link rel="preload" href="assets/hero_image.webp" as="image">
+    <link rel="preload" href="assets/dog_food.webp" as="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cara</title>
-        <link rel="icon" type="image/x-icon" href="./img/icon1.png">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-        <link rel="stylesheet" href="style.css">
-    </head>
+<body>
+    <header>
+        <nav>
+            <img src="assets/nav_logo2.webp" alt="Logo" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <!-- <li><a href="#vet">Vet</a></li> -->
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html">Cart <i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <body>
-        <section id="header">
-            <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    <div class="floating-cart">
+        <a href="cart.html" class="cart-fab">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
 
-            <div>
-                <ul id="navbar">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="shop.html">Shop</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li id="lg-bag"><a href="cart.html"><i class='bx bx-shopping-bag' ></i></a></li>
-                    <a href="#" id="close"><i class='bx bx-x'></i></a>
-                </ul>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>YOUR PET'S <span class="highlight">PARADISE</span> AWAITS</h1>
+            <p class="hero-subtitle">Experience Premium Pet Care Like Never Before</p>
+            <div class="hero-features">
+                <div class="feature" onclick="window.location.href='shop.html'">
+                    <i class="fas fa-paw"></i>
+                    <span>PREMIUM PRODUCTS</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <span>EXPERT CARE</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <span>FAST DELIVERY</span>
+                </div>
             </div>
-            <div id="mobile">
-                <a href="cart.html"><i class='bx bx-shopping-bag' ></i></a>
-                <i id="bar" class='bx bx-menu'></i>
+            <div class="hero-buttons">
+                <button class="primary-btn" onclick="scrollToFeaturedProducts()">EXPLORE NOW <i class="fas fa-arrow-right"></i></button>
+                <button class="secondary-btn">LEARN MORE <i class="fas fa-chevron-down"></i></button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="main">
-            <h4>Trade-in-offer</h4>
-            <h2>Super value deals</h2>
-            <h1>On all products</h1>
-            <p>save more with coupons & up to 70% off!</p>
-            <button class="btn">Shop Now</button>
-        </section> 
-
-        <section id="feature" class="section-p1">
-            <div class="fe-box">
-                <img src="img/features/f1.png" alt="">
-                <h6>Free Shipping</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f2.png" alt="">
-                <h6>Online Order</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f3.png" alt="">
-                <h6>Save Money</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f4.png" alt="">
-                <h6>Promotions</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f5.png" alt="">
-                <h6>Happy Sell</h6>
-            </div>
-            <div class="fe-box">
-                <img src="img/features/f6.png" alt="">
-                <h6>F24/7 Support</h6>
-            </div>
-        </section>
-
-        <section id="product1" class="section-p1">
+    <section class="featured-products" id="featured-products">
+        <div class="section-header">
             <h2>Featured Products</h2>
-            <p>Summer Collection New Modern Design</p>
-            <div class="pro-container">
-                <div class="pro">
-                    <img class="shirt" src="img/products/f1.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f2.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f3.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f4.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f5.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f6.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f7.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/f8.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2499</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
+            <p class="section-subtitle">Discover our premium selection of pet care products</p>
+        </div>
+       <div class="product-grid">
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 1', '₹2499', `🐾 Premium Dog Food for a Happy, Healthy Pup
+                Fuel your furry friend with nutrition they deserve.
+                
+                Introducing TailWag Delights – a wholesome blend of natural ingredients tailored to meet your dog's daily needs. Whether your pup is a playful puppy or a wise old tail-wagger, our formula supports:
+                
+                ✅ Healthy Digestion with added prebiotics and fiber
+                ✅ Strong Muscles & Joints with real chicken, lamb, or salmon protein
+                ✅ Shiny Coat & Skin thanks to omega-3 & 6 fatty acids
+                ✅ Boosted Immunity from vitamins, minerals, and antioxidants
+                
+                No fillers. No artificial colors. Just real food made with love.
+                
+                🌾 Grain-free options available for sensitive tummies
+                🍗 Made with real meat as the #1 ingredient
+                🧪 Vet-approved and backed by science
+                
+                Because your dog isn’t just a pet—they’re family.`, 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 1">
+                <h3>Dog Food - 1</h3>
+                <p class="price">₹2499</p>
             </div>
-        </section>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 2', '₹2499', 'Premium quality dog food with balanced nutrition for your pet.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 2">
+                <h3>Dog Food - 2</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 3', '₹2499', 'Specially formulated dog food for optimal health and energy.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 3">
+                <h3>Dog Food - 3</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 4', '₹2499', 'Nutritious dog food with essential vitamins and minerals.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 4">
+                <h3>Dog Food - 4</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 5', '₹2499', 'High-protein dog food for active and growing pets.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 5">
+                <h3>Dog Food - 5</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 6', '₹2499', 'Grain-free dog food for sensitive stomachs.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 6">
+                <h3>Dog Food - 6</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 7', '₹2499', 'Organic dog food made with natural ingredients.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 7">
+                <h3>Dog Food - 7</h3>
+                <p class="price">₹2499</p>
+            </div>
+            <div class="product-card"
+                onclick="openPopup('Dog Food - 8', '₹2499', 'Veterinarian recommended dog food for all breeds.', 'assets/dog_food.webp')">
+                <img src="assets/dog_food.webp" alt="Dog Food - 8">
+                <h3>Dog Food - 8</h3>
+                <p class="price">₹2499</p>
+            </div>
+        </div>
+    </section>
 
-        <section id="banner" class="section-m1">
-            <h4>Repair Services</h4>
-            <h2>Upto <span>70% Off</span> - All t-Shirts & Accessories</h2>
-            <button class="normal">Explore More</button>
-        </section>
-
-        <section id="product1" class="section-p1">
-            <h2>New Arrivals</h2>
-            <p>Summer Collection New Modern Design</p>
-            <div class="pro-container">
-                <div class="pro">
-                    <img class="shirt" src="img/products/n1.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
+    <div id="product-popup" class="popup">
+        <div class="popup-content">
+            <img id="popup-image" src="" alt="Product Image" class="product-image">
+            <div class="product-details">
+                <h2 id="product-title">Product Name</h2>
+                <p id="product-price">Price</p>
+                <p id="product-description">Description</p>
+                <div class="quantity-selector">
+                    <button id="decrease-quantity" onclick="changeQuantity(-1)">-</button>
+                    <input type="number" id="quantity" value="1" min="1" readonly>
+                    <button id="increase-quantity" onclick="changeQuantity(1)">+</button>
                 </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n2.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n3.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n4.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n5.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n6.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n7.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
-                </div>
-                <div class="pro">
-                    <img class="shirt" src="img/products/n8.jpg" alt="">
-                    <div class="des">
-                        <span>adidas</span>
-                        <h5>Cartoon Astronaut T-Shirts</h5>
-                        <div class="star">
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                            <i class='bx bxs-star' ></i>
-                        </div>
-                        <h4>₹2999</h4>
-                    </div>
-                    <a href="#"><i class='bx bx-cart cart' ></i></a>
+                <div class="button-container">
+                    <button id="add-to-cart">Add to Cart</button>
+                    <button id="close-popup" onclick="closePopup()">Close</button>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <section id="sm-banner" class="section-p1">
-            <div class="banner-box">
-                <h4>crazy deals</h4>
-                <h2>buy 1 get 1 free</h2>
-                <span>The best classic dress is on sale at cara</span>
-                <button class="white">Learn More</button>
-            </div>
-            <div class="banner-box banner-box2">
-                <h4>spring/summer</h4>
-                <h2>upcoming season</h2>
-                <span>The best classic dress is on sale at cara</span>
-                <button class="white">Collection</button>
-            </div>
-        </section>
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-        <section id="banner3">
-            <div class="banner-box">
-                <h2>SEASONAL SALE</h2>
-                <h3>Winter Collection -50% OFF</h3>
+    <footer>
+        <div class="footer-section">
+            <h4>Contact</h4>
+            <p><b>Address:</b> Manav Rachna University</p>
+            <p><b>Phone:</b> +91 5555555555</p>
+            <p><b>Hours:</b> 10:00 AM - 08:00 PM, Mon - Sat</p>
+        </div>
+        <div class="footer-section">
+            <h4>About</h4>
+            <p><a href="#">About Us</a></p>
+            <p><a href="#">Delivery Information</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Contact Us</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>My Account</h4>
+            <p><a href="#">Sign In</a></p>
+            <p><a href="#">View Cart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track My Order</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="footer-section">
+            <h4>Install App</h4>
+            <p><b>From App Store or Google Play</b></p>
+            <div class="app-images">
+                <img src="assets/app.webp" alt="App Store" />
+                <img src="assets/play.webp" alt="Google Play" />
             </div>
-            <div class="banner-box banner-box2">
-                <h2>NEW FOOTWEAR COLLECTION</h2>
-                <h3>Spring / Summer 2023</h3>
-            </div>
-            <div class="banner-box banner-box3">
-                <h2>T-SHIRTS</h2>
-                <h3>New Trendy Prints</h3>
-            </div>
-        </section>
+            <p><b>Secured Payment Gateways</b></p>
+            <img src="assets/pay.webp" alt="Payment Gateways" class="payment-gateway-image" />
+        </div>
+    </footer>
 
-        <section id="newsletter" class="section-p1 section-m1">
-            <div class="newstext">
-                <h4>Sign Up For Newsletters</h4>
-                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
-            </div>
-            <div class="form">
-                <input type="text" placeholder="Your email address">
-                <button class="normal">Sign Up</button>
-            </div>
-        </section>
+    <script src="script.js"></script>
+</body>
 
-        <footer class="section-p1">
-            <div class="col">
-                <img class="logo" src="./img/logo.png" alt="">
-                <h4>Contact</h4>
-                <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
-                <p><strong>Phone:</strong> +01 2222 345 / (+91) 0 123 456 789</p>
-                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-                <div class="follow">
-                    <h4>Follow us</h4>
-                    <div class="icon">
-                        <i class='bx bxl-facebook'></i>
-                        <i class='bx bxl-twitter' ></i>
-                        <i class='bx bxl-instagram' ></i>
-                        <i class='bx bxl-pinterest-alt' ></i>
-                        <i class='bx bxl-youtube' ></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col">
-                <h4>About</h4>
-                <a href="#">About us</a>
-                <a href="#">Devlivery Information</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms & Conditions</a>
-                <a href="#">Contact Us</a>
-            </div>
-
-            <div class="col">
-                <h4>My Account</h4>
-                <a href="#">Sign In</a>
-                <a href="#">View Cart</a>
-                <a href="#">My Wishlist</a>
-                <a href="#">Track My Order</a>
-                <a href="#">Help</a>
-            </div>
-
-            <div class="col install">
-                <h4>Install App</h4>
-                <p>From App Store or Google Play</p>
-                <div class="row">
-                    <img src="./img/pay/app.jpg" alt="">
-                    <img src="./img/pay/play.jpg" alt="">
-                </div>
-                <p>Secured Payment Gateways</p>
-                <img src="./img/pay/pay.png" alt="">
-            </div>
-
-            <div class="copyright">
-                <p>© 2023, Sahad cmd - HTML CSS Ecommerce Template</p>
-            </div>
-        </footer>
-
-        <script src="script.js"></script>
-    </body>
 </html>
