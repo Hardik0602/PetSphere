@@ -12,7 +12,7 @@ const App = () => {
     createRoutesFromElements(
       <Route path='/' element={<MainLayout />}>
         <Route index element={<HomePage />} />
-        <Route path='/browse' element={<ProductsPage />} />
+        <Route path='/products' element={<ProductsPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/product/:ID' element={<ProductPage />} />

@@ -25,9 +25,9 @@ const NavBar = () => {
           Home
         </NavLink>
         <NavLink
-          to='/browse'
+          to='/products'
           className={isActive}>
-          Browse
+          Products
         </NavLink>
         <NavLink
           to='/about'
@@ -67,9 +67,9 @@ const NavBar = () => {
           </NavLink>
           <NavLink
             onClick={() => { setVisible(false) }}
-            to='/collection'
+            to='/products'
             className='py-2 pl-6'>
-            Collection
+            Products
           </NavLink>
           <NavLink
             onClick={() => { setVisible(false) }}

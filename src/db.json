@@ -1,0 +1,70 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Dog Food Premium",
+            "description": "High quality dog food",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "category": "food"
+        },
+        {
+            "id": 2,
+            "name": "Cat Toy",
+            "description": "Interactive cat toy",
+            "price": 299,
+            "image": "/cat_toy.jpg",
+            "category": "toys"
+        },
+        {
+            "id": 3,
+            "name": "Dog Food Premium",
+            "description": "High quality dog food",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "category": "food"
+        },
+        {
+            "id": 4,
+            "name": "Dog Food Premium",
+            "description": "High quality dog food",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "category": "food"
+        },
+        {
+            "id": 5,
+            "name": "Dog Food Premium",
+            "description": "High quality dog food",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "category": "food"
+        },
+        {
+            "id": 6,
+            "name": "Dog Food Premium",
+            "description": "High quality dog food",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "category": "food"
+        }
+    ],
+    "cart": [
+        {
+            "id": 1,
+            "productId": 2,
+            "name": "Cat Toy",
+            "price": 299,
+            "image": "/cat_toy.jpg",
+            "quantity": 2
+        },
+        {
+            "id": 2,
+            "productId": 1,
+            "name": "Dog Food Premium",
+            "price": 899,
+            "image": "/dog_food.jpg",
+            "quantity": 1
+        }
+    ]
+}
