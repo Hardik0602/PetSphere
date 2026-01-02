@@ -20,21 +20,25 @@ const NavBar = () => {
         className='w-36' />
       <ul className='hidden sm:flex gap-5 text-md text-gray-700'>
         <NavLink
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           to='/'
           className={isActive}>
           Home
         </NavLink>
         <NavLink
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           to='/products'
           className={isActive}>
           Products
         </NavLink>
         <NavLink
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           to='/about'
           className={isActive}>
           About
         </NavLink>
         <NavLink
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           to='/contact'
           className={isActive}>
           Contact

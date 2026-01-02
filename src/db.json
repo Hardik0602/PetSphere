@@ -1,70 +1,70 @@
 {
-    "products": [
-        {
-            "id": 1,
-            "name": "Dog Food Premium",
-            "description": "High quality dog food",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "category": "food"
-        },
-        {
-            "id": 2,
-            "name": "Cat Toy",
-            "description": "Interactive cat toy",
-            "price": 299,
-            "image": "/cat_toy.jpg",
-            "category": "toys"
-        },
-        {
-            "id": 3,
-            "name": "Dog Food Premium",
-            "description": "High quality dog food",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "category": "food"
-        },
-        {
-            "id": 4,
-            "name": "Dog Food Premium",
-            "description": "High quality dog food",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "category": "food"
-        },
-        {
-            "id": 5,
-            "name": "Dog Food Premium",
-            "description": "High quality dog food",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "category": "food"
-        },
-        {
-            "id": 6,
-            "name": "Dog Food Premium",
-            "description": "High quality dog food",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "category": "food"
-        }
-    ],
-    "cart": [
-        {
-            "id": 1,
-            "productId": 2,
-            "name": "Cat Toy",
-            "price": 299,
-            "image": "/cat_toy.jpg",
-            "quantity": 2
-        },
-        {
-            "id": 2,
-            "productId": 1,
-            "name": "Dog Food Premium",
-            "price": 899,
-            "image": "/dog_food.jpg",
-            "quantity": 1
-        }
-    ]
+  "products": [
+    {
+      "id": "1",
+      "name": "Dog Food Premium",
+      "description": "Nutritious premium dog food made with real meat and essential vitamins to support healthy digestion, strong bones, and a shiny coat. Carefully formulated to provide balanced daily nutrition, this food helps maintain energy levels, muscle strength, and overall well-being for adult dogs of all breeds.",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "category": "food"
+    },
+    {
+      "id": "2",
+      "name": "Cat Toy",
+      "description": "Interactive cat toy designed to stimulate hunting instincts, reduce boredom, and keep your cat active and entertained indoors.",
+      "price": 299,
+      "image": "/cat_toy.jpg",
+      "category": "toys"
+    },
+    {
+      "id": "3",
+      "name": "Dog Food Premium",
+      "description": "Nutritious premium dog food made with real meat and essential vitamins to support healthy digestion, strong bones, and a shiny coat. Carefully formulated to provide balanced daily nutrition, this food helps maintain energy levels, muscle strength, and overall well-being for adult dogs of all breeds.",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "category": "food"
+    },
+    {
+      "id": "4",
+      "name": "Dog Food Premium",
+      "description": "Nutritious premium dog food made with real meat and essential vitamins to support healthy digestion, strong bones, and a shiny coat. Carefully formulated to provide balanced daily nutrition, this food helps maintain energy levels, muscle strength, and overall well-being for adult dogs of all breeds.",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "category": "food"
+    },
+    {
+      "id": "5",
+      "name": "Dog Food Premium",
+      "description": "Nutritious premium dog food made with real meat and essential vitamins to support healthy digestion, strong bones, and a shiny coat. Carefully formulated to provide balanced daily nutrition, this food helps maintain energy levels, muscle strength, and overall well-being for adult dogs of all breeds.",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "category": "food"
+    },
+    {
+      "id": "6",
+      "name": "Dog Food Premium",
+      "description": "Nutritious premium dog food made with real meat and essential vitamins to support healthy digestion, strong bones, and a shiny coat. Carefully formulated to provide balanced daily nutrition, this food helps maintain energy levels, muscle strength, and overall well-being for adult dogs of all breeds.",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "category": "food"
+    }
+  ],
+  "cart": [
+    {
+      "id": "caf4",
+      "productID": "1",
+      "name": "Dog Food Premium",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "quantity": 4
+    },
+    {
+      "id": "b1fe",
+      "productID": "2",
+      "name": "Cat Toy",
+      "price": 299,
+      "image": "/cat_toy.jpg",
+      "quantity": 3
+    }
+  ]
 }

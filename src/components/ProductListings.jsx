@@ -23,7 +23,7 @@ const ProductListings = ({ isHome = false }) => {
     fetchProducts()
   }, [])
   return (
-    <section className='my-5'>
+    <section>
       <h2 className='text-3xl text-gray-500 mb-3 font-extrabold text-center'>
         {isHome ? 'Latest Products' : 'Browse Products'}
       </h2>

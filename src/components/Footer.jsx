@@ -14,9 +14,15 @@ const Footer = () => {
                 <div>
                     <p className='text-xl font-medium mb-5'>Links</p>
                     <ul className='flex flex-col gap-1 text-gray-600'>
-                        <Link to={'/'}>Home</Link>
-                        <Link to={'/about'}>About</Link>
-                        <Link to={'/contact'}>Contact</Link>
+                        <Link
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to={'/'}>Home</Link>
+                        <Link
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to={'/about'}>About</Link>
+                        <Link
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to={'/contact'}>Contact</Link>
                     </ul>
                 </div>
                 <div>

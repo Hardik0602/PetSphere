@@ -3,7 +3,7 @@ import Hero_Img from './../assets/hero.jpg'
 import { FaPaw } from 'react-icons/fa'
 const Hero = () => {
     return (
-        <section className='flex flex-col sm:flex-row border mb-15 border-gray-400'>
+        <section className='flex flex-col sm:flex-row border mb-10 border-gray-400'>
             <div className='flex w-full sm:w-1/2 items-center justify-center my-5'>
                 <div className='text-[#414141] flex flex-col gap-1.5 sm:gap-0'>
                     <div className='flex items-center gap-2'>
