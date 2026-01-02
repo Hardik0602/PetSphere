@@ -51,7 +51,7 @@ const NavBar = () => {
         </button>
       </div>
       <div className={`absolute top-0 right-0 bottom-0 overflow-hidden bg-white transition-all ${visible ? 'w-full' : 'w-0'}`}>
-        <div className='flex flex-col text-gray-600'>
+        <nav className='flex flex-col text-gray-600'>
           <div className='p-3'>
             <button
               className='cursor-pointer'
@@ -83,7 +83,7 @@ const NavBar = () => {
             className='py-2 pl-6'>
             Contact
           </NavLink>
-        </div>
+        </nav>
       </div>
     </nav>
   )

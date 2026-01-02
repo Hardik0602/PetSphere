@@ -4,7 +4,7 @@ import { FaExchangeAlt } from 'react-icons/fa'
 import { TbTruckReturn } from 'react-icons/tb'
 const Policy = () => {
     return (
-        <section className='flex flex-col sm:flex-row justify-around gap-12 sm:gap-2 text-center py-20 text-base text-gray-700'>
+        <section className='flex flex-col sm:flex-row justify-around gap-12 sm:gap-2 text-center my-15 text-base text-gray-700'>
             <div>
                 <FaExchangeAlt size={25} className='m-auto mb-3' />
                 <p className='font-semibold mb-1'>Easy Exchange</p>
