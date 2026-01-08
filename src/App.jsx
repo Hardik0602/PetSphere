@@ -4,7 +4,6 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
 import ProductPage from './pages/ProductPage'
 import CartPage from './pages/CartPage'
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
         <Route index element={<HomePage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/about' element={<AboutPage />} />
-        <Route path='/contact' element={<ContactPage />} />
         <Route path='/product/:id' element={<ProductPage />} />
         <Route path='/cart' element={<CartPage />} />
       </Route>

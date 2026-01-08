@@ -22,7 +22,10 @@ const Footer = () => {
                             to={'/about'}>About</Link>
                         <Link
                             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-                            to={'/contact'}>Contact</Link>
+                            to={'/products'}>Products</Link>
+                        <Link
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            to={'/cart'}>Cart</Link>
                     </ul>
                 </div>
                 <div>

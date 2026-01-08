@@ -18,7 +18,7 @@ const NavBar = () => {
       <img
         src={Logo} alt="logo_img"
         className='w-36' />
-      <ul className='hidden sm:flex gap-5 text-md text-gray-700'>
+      <ul className='hidden sm:flex gap-10 text-md text-gray-700'>
         <NavLink
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           to='/'
@@ -36,12 +36,6 @@ const NavBar = () => {
           to='/about'
           className={isActive}>
           About
-        </NavLink>
-        <NavLink
-          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          to='/contact'
-          className={isActive}>
-          Contact
         </NavLink>
       </ul>
       <div className='flex gap-5'>
@@ -80,12 +74,6 @@ const NavBar = () => {
             to='/about'
             className='py-2 pl-6'>
             About
-          </NavLink>
-          <NavLink
-            onClick={() => { setVisible(false) }}
-            to='/contact'
-            className='py-2 pl-6'>
-            Contact
           </NavLink>
         </nav>
       </div>
