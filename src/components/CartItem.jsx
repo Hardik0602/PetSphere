@@ -1,12 +1,15 @@
 import React from 'react'
 import { GoTrash } from 'react-icons/go'
+import { Link } from 'react-router-dom'
 const CartItem = ({ item, deleteItem, changeQuantity }) => {
     return (
         <div className='py-4 border-y text-gray-700 grid grid-cols-[4fr_0.5fr_0.5fr] sm:grid-cols-[4fr_2fr_0.5fr] items-center gap-4'>
             <div className='flex items-start gap-6'>
-                <img
-                    src={item.image} alt="product image"
-                    className='h-16 sm:h-20' />
+                <Link to={`/product/${item.id}`}>
+                    <img
+                        src={item.image} alt="product image"
+                        className='h-16 sm:h-20' />
+                </Link>
                 <div>
                     <p className='text-xs sm:text-lg font-medium'>{item.name}</p>
                     <div className='flex items-center gap-5 mt-2'>

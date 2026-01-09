@@ -28,10 +28,10 @@ const ProductPage = () => {
       const res = await fetch('http://localhost:5000/cart')
       const data = await res.json()
       const inCart = data.find(
-        (item) => item.productID === product.id
+        (item) => item.id == product.id
       )
       if (inCart) {
-        await fetch(`http://localhost:5000/cart/${inCart.id}`, {
+        await fetch(`http://localhost:5000/cart/${product.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ const ProductPage = () => {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            productID: product.id,
+            id: product.id,
             name: product.name,
             price: product.price,
             image: product.image,
@@ -67,7 +67,7 @@ const ProductPage = () => {
       {loading
         ? <Spinner loading={loading} />
         : <div className='mt-5'>
-          <div className='flex gap-12 flex-col sm:flex-row'>
+          <div className='flex gap-12 flex-col sm:flex-row items-center'>
             <div className='w-full sm:w-[50%]'>
               <img
                 className='w-full'

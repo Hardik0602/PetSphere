@@ -4,6 +4,7 @@ import { toast } from 'react-toastify'
 import Spinner from './../components/Spinner'
 import CartItem from './../components/CartItem'
 import CartTotal from '../components/CartTotal'
+import { Link } from 'react-router-dom'
 const CartPage = () => {
   const [cart, setCart] = useState([])
   const [loading, setLoading] = useState(true)
@@ -81,7 +82,11 @@ const CartPage = () => {
                 <div className='w-full sm:w-112.5'>
                   <CartTotal cart={cart} />
                   <div className='w-full text-end'>
-                    <button className='bg-black hover:bg-gray-700 text-white text-sm my-8 px-8 py-3'>Proceed to Checkout</button>
+                    <Link
+                      to='/checkout'
+                      className='bg-black hover:bg-gray-700 text-white text-sm my-8 px-8 py-3 inline-block'>
+                      Proceed to Checkout
+                    </Link>
                   </div>
                 </div>
               </div>

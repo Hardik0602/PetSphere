@@ -9,7 +9,7 @@ const Footer = () => {
                     <img
                         src={Logo} alt="logo"
                         className='mb-5 w-32' />
-                    <p className='w-full md:w-2/3 text-gray-600 text-base'>All Your <span className='font-bold'>Pet Essentials</span> In One Place</p>
+                    <p className='w-full md:w-2/3 text-gray-600 text-base'>Supporting pet parents with <span className='font-bold'>reliable essentials</span> for every stage of life.</p>
                 </div>
                 <div>
                     <p className='text-xl font-medium mb-5'>Links</p>
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <div>
                 <hr />
-                <p className='py-5 text-sm text-center font-semibold'>Copyright 2025 petsphere.com - All Rights Reserved</p>
+                <p className='py-5 text-sm text-center font-semibold'>Copyright 2026 petsphere.com - All Rights Reserved</p>
             </div>
         </footer>
     )

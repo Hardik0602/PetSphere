@@ -49,5 +49,20 @@
       "category": "food"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "1",
+      "name": "Dog Food Premium",
+      "price": 899,
+      "image": "/dog_food.jpg",
+      "quantity": 14
+    },
+    {
+      "id": "2",
+      "name": "Cat Toy",
+      "price": 299,
+      "image": "/cat_toy.jpg",
+      "quantity": 2
+    }
+  ]
 }
